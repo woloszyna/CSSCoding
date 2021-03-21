@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+    <head>
+        <title>My first webpage</title>
+    </head>
+
+    <body>
+
+        <div>
+            <header>
+                This is some header
+            </header>
+        </div>
+    
+        <!-- Heading are represented by h symbol,
+        there are six levels of headings -->
+        <h1>This is level one (h1)</h1>
+        <h2>This is level two (h2)</h2>
+        <h3>This is level three (h3)</h3>
+        <h4>This is level four (h4)</h4>
+        <h5>This is level five (h5)</h6>
+        <h6>This is level six (h6)</h6>
+    
+
+        <!-- P is used for paragraphs and the following is 
+        how it looks like -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <!-- adding image -->
+        <img src="./images/spiderman.png" height="200px" width="200" alt="Some pic"> <!--This is the dir of an image-->
+
+        <!-- Line Breaks -->
+        <p>Lorem ipsum dolor sit amet,</br> <!-- This is how the line break looks like --> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</br>
+            Ut enim ad minim veniam, quis nostrud exercitation</br> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <b>This is how bold text looks like</b> <!-- This is how to bold text --> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            <strong>This is also bold text</strong> <!-- This is also how to bold text --> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <!-- Size of text -->
+        <!-- This makes text big -->
+            <big>This text is big</big></br></br>
+
+            <!-- This makes text small -->
+            <small>This text is smal</small></br></br>
+
+            <!-- Horizontal lines: 
+                use hr tag and optionally use the width -->
+            <hr width="50%">
+            <hr>
+
+            <!--Links-->
+            <a href="http://www.google.com">This is a link to some website</a></br>
+            <hr>
+
+            <!--Links can also be put on images-->
+            <a href="http://www.google.com"><img src="./images/spiderman.png"></a>
+
+            <!--Lists-->
+            <!--Ordered List-->
+            <h2>Lists</h2>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>one </li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+            </ol>
+
+            <!--Unordered List-->
+            <h3>Unordered List</h3>
+            <ul>
+                <li>one </li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+                <li><img src="./images/spiderman.png" height="50" width="50"></li>
+            </ul>
+
+            <h2>Forms</h2>
+            <p>This is how to create forms. Look into the code.</p>
+
+            <!--This is how the form is structured-->
+            <div id="reg-form">
+                <!--When creating form, remember about action and method-->
+                <form action="" method="">
+                    <!--Labels are used to describe fields-->
+                    <label for="first name">Input First Name</label>
+                    <!--Inputs define the fields-->
+                    <!--require attribute makes the field required, 
+                        the form cannot be submitted 
+                        xwithout providing value in the field-->
+                    <input type="text" name="first name" placeholder="first name" required><br>
+                    <label for="email">Input email</label>
+                    <input type="email" name="email" id="email" placeholder="email"><br>
+                    <label for="password">Input Password</label>
+                    <input type="password" name="password" id="password" placeholder="password"><br>
+                    <!--Buttons create a button element with a name-->
+            </div>
+
+            <div>
+                <!-- Other input types
+
+                Radiobuttons
+                radiobuttons have to have the NAME attribute in order to be switched through -->
+                <label for="gender-male">Male</label>
+                <input type="radio" name="gender" value="1"> <!--name is identical here-->
+                <label for="gender-female">Female</label>
+                <input type="radio" name="gender" value="2"> <!--name is identical here-->
+                <label for="gender-other">Other</label>
+                <input type="radio" name="gender" value="3"> <!--name is identical here-->
+                <!--When NAME attribute will be the different to one another, then all radiobuttons
+                    can be clicked at the same time -->
+            </div>
+
+            <div>
+                <h3>Select tags</h3>
+                <!--Select tags are for making dropdowns -->
+                <label for="Month">Birthday</label>
+                <select name="Month" id="Month">
+                    <!--In the SELECT tag there should always be OPTION
+                    which repesents an option in the dropdown-->
+
+                    <!--The value "0" (or the lovest char or number puts a default option on the 
+                    top of the list. "selected disabled" locks the option
+                    so it cannot be selected-->
+                    <option value="0" selected disabled>Month</option>
+                    <option value="jan">January</option>
+                    <!--When "disabled" exists on one or more options that
+                    have content, such content will be greyed out
+                    and users will not be able to select the option-->
+                    <option value="feb" disabled>February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+                
+                <label for="Day">Day</label>
+                <select name="Day" id="Day">
+                    <option value="0" selected disabled>Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Terms and conditions as a checkbox</h3>
+                <!--Checkbox - uses type of CHECKBOX-->
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">
+                    I agree to terms and conditions. 
+                    I agree to terms and conditions. 
+                    I agree to terms and conditions. 
+                    I agree to terms and conditions. 
+                    I agree to terms and conditions. 
+                    I agree to terms and conditions. 
+                    I agree to terms and conditions. 
+                    I agree to terms and conditions.  
+                </label>
+            </div>
+        <div>
+            <button>Submit</button>
+
+            </form> <!--End of the form-->
+            
+            <br><br><hr>
+
+            <div>
+                <h1>Tables</h1>
+            </div>
+            
+            <div>
+                <!--To create table use the TABLE tag-->
+                <table>
+                    <!--All tables come with the header tag - thead. Table Headers
+                    each TH option below creates a header in the page-->
+                    <thead>
+                        <!--Each individual th tag contains one teable header -->
+                        <th>Dog Owner</th>
+                        <th>Name</th>
+                        <th>Breed</th>
+                    </thead>
+
+                    <!--Table rows - tr-->
+                    <tr>
+                        <!--Each table row contains table data - td-->
+                        <td>Alicja</td>
+                        <td>Dax</td>
+                        <td>cavs</td>
+                    </tr>
+                    <tr>
+                        <!--Each table row contains table data - td-->
+                        <td>Cindy</td>
+                        <td>vrefs</td>
+                        <td>Husky</td>
+                    </tr>
+                    <tr>
+                        <!--Each table row contains table data - td-->
+                        <td>nerwja</td>
+                        <td>cvnrajk</td>
+                        <td>nejw</td>
+                    </tr>
+                    <tr>
+                        <!--Each table row contains table data - td-->
+                        <td>Albert</td>
+                        <td>Rex</td>
+                        <td>Mix</td>
+                    </tr>
+                    
+                    <!---->
+                    <!---->
+                </table>
+            </div>
+
+            <div>
+                <h3></h3>
+                <!---->
+            </div>
+
+            <div>
+                <h3></h3>
+                <!---->
+            </div>
+
+            <div>
+                <h3></h3>
+                <!---->
+            </div>
+
+            <div>
+                <h3></h3>
+                <!---->
+            </div>
+
+            <div>
+                <h3></h3>
+                <!---->
+            </div>
+            <footer>
+                This is some footer
+            </footer>
+        </div>
+
+    </body>
+</html>
