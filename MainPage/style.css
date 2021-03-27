@@ -10,7 +10,7 @@
     font-size: 90px;
     color: #d01010;
     width: 120px;
-    cursor: pointer;
+    cursor: none;
 }
 
 .right-logo {
@@ -18,14 +18,14 @@
     margin-left: 10px;
     color: #5e0000;
     width: 120px;
-    cursor: pointer;
+    cursor: none;
 }
 
 .qa-logo {
     margin-left: 30px;
     margin-top: -20px;
     font-size: 30px;
-    cursor: pointer;
+    cursor: none;
 }
 
 .banner {
