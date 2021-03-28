@@ -13,12 +13,12 @@
 }
 
 .left-logo {
-color: rgb(208,16,16);
-font-size: 120px;
-cursor: pointer;
-position: fixed;
-top: 0px;
-left: 120px;
+    color: rgb(208,16,16);
+    font-size: 120px;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    left: 120px;
 }
 
 .right-logo {
@@ -63,6 +63,8 @@ left: 120px;
      text-decoration: none;
      color: white;
      text-transform: uppercase;
+     position: relative;
+     top: 90px;
  }
 
 
@@ -74,7 +76,7 @@ left: 120px;
      background-color: rgb(208,16,16);
      position: absolute;
      left: 0;
-     bottom: -5px;
+     bottom: -95px;
      transition: 0.5s;
  }
 
