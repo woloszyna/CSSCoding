@@ -1,54 +1,46 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: lightblue;
+    background: grey;
 }
 
 header{
-    background-color: darkgrey;
+    background-color: black;
     width: 100%;
     height: 80px;
-    box-shadow: black 10px 5px 20px 1px;
 }
 
 h1{
-    color: black;
     position: absolute;
-    margin-top: 5px;
-    margin-left: 10px;
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
     cursor: pointer;
 }
 
 span{
-    color: green;
+    color: red;
 }
 
-span:hover{
-    color: black;
+h1:hover{
+    font-size: 50px;
     transition: 0.5s;
 }
 
 ul{
     float: right;
+    margin-top: 15px;
 }
 
 li{
     display: inline-block;
-    margin-top: 5px;
-    padding: 1px 10px;
+    padding: 20px;
 }
 
 a{
+    font-family: 'Monoton', cursive;
     text-decoration: none;
-    color: black;
-    font-family: 'Anton', sans-serif;
-    font-size: 30px;
+    color: white;
 }
-
-a:hover{
-    color: green;
-    transition: 0.5s;
-}
-
