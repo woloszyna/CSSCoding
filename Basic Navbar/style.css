@@ -11,18 +11,46 @@ header{
 
 h1{
     position: absolute;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 10px;
     font-family: 'Audiowide', cursive;
-    font-size: 50px;
-    
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 2;
+    cursor: pointer;
 }
 
+.brackets{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 60px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+    z-index: 1;
+    color: #d01010;
+    cursor: pointer;
+}
+
+h2 span{
+    color: #5e0000;
+}
+
+header p{
+    position: absolute;
+    font-family: 'Audiowide', cursive;
+    margin-top: 35px;
+    margin-left: 300px;
+    color: grey;
+}
+
+header p:hover{
+    color: #5c3636;
+    transition: 00.5s
+}
 
 ul{
     float: right;
-    margin-top: 15px;
-    margin-right: 10px;
 }
 
 li{
@@ -32,8 +60,13 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: #5e0000;
     font-family: 'Audiowide', cursive;
     font-weight: bold;
     font-size: 20px;
+}
+
+a:hover{
+    color: #d01010;
+    transition: 0.5s;
 }
